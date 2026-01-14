@@ -1,10 +1,12 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="mx-auto w-full max-w-4xl px-8 py-16">
       <div className="mb-12">
-        <p className="text-xs font-medium uppercase tracking-wider text-neutral-300">Axiom</p>
+        <p className="text-xs font-medium uppercase tracking-wider text-neutral-300">
+          Axiom
+        </p>
 
         <h1 className="mt-3 text-5xl font-semibold tracking-tight text-white">
           Daily Logic, Clean Thinking
