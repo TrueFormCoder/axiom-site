@@ -69,6 +69,7 @@ export default function ResourcesLayout({
 
           prose-ul:list-disc prose-ul:list-outside prose-ul:pl-6 prose-ul:my-5
           prose-ol:list-decimal prose-ol:list-outside prose-ol:pl-6 prose-ol:my-5
+
           prose-li:marker:text-neutral-200
           prose-ol:marker:font-semibold prose-ol:marker:text-neutral-100
 
