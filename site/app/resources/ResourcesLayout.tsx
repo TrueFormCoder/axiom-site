@@ -25,28 +25,28 @@ export default function ResourcesLayout({
         ) : null}
 
         <nav className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          <Link className="text-neutral-700 underline-offset-4 hover:underline" href="/resources">
+          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources">
             Index
           </Link>
-          <Link className="text-neutral-700 underline-offset-4 hover:underline" href="/resources/how-it-works">
+          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/how-it-works">
             How It Works
           </Link>
-          <Link className="text-neutral-700 underline-offset-4 hover:underline" href="/resources/why-axiom">
+          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/why-axiom">
             Why Axiom
           </Link>
-          <Link className="text-neutral-700 underline-offset-4 hover:underline" href="/resources/logic-primer">
+          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/logic-primer">
             Logic Primer
           </Link>
-          <Link className="text-neutral-700 underline-offset-4 hover:underline" href="/resources/faq">
+          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/faq">
             FAQ
           </Link>
-          <Link className="text-neutral-700 underline-offset-4 hover:underline" href="/resources/updates">
+          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/updates">
             Updates
           </Link>
         </nav>
       </div>
 
-      <article className="prose prose-neutral max-w-none">
+      <article className="prose prose-invert max-w-none">
         {children}
       </article>
 
