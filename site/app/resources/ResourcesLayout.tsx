@@ -10,7 +10,7 @@ export default function ResourcesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="mx-auto w-full max-w-3xl px-6 py-12">
+    <main className="mx-auto w-full max-w-3xl px-8 py-16">
       <div className="mb-10">
         <p className="text-xs uppercase tracking-wider text-neutral-500">
           Resources
@@ -25,28 +25,28 @@ export default function ResourcesLayout({
         ) : null}
 
         <nav className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources">
+          <Link className="text-neutral-100 hover:text-white underline-offset-4 hover:underline" href="/resources">
             Index
           </Link>
-          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/how-it-works">
+          <Link className="text-neutral-100 hover:text-white underline-offset-4 hover:underline" href="/resources/how-it-works">
             How It Works
           </Link>
-          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/why-axiom">
+          <Link className="text-neutral-100 hover:text-white underline-offset-4 hover:underline" href="/resources/why-axiom">
             Why Axiom
           </Link>
-          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/logic-primer">
+          <Link className="text-neutral-100 hover:text-white underline-offset-4 hover:underline" href="/resources/logic-primer">
             Logic Primer
           </Link>
-          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/faq">
+          <Link className="text-neutral-100 hover:text-white underline-offset-4 hover:underline" href="/resources/faq">
             FAQ
           </Link>
-          <Link className="text-neutral-200 hover:text-white underline-offset-4 hover:underline" href="/resources/updates">
+          <Link className="text-neutral-100 hover:text-white underline-offset-4 hover:underline" href="/resources/updates">
             Updates
           </Link>
         </nav>
       </div>
 
-      <article className="prose prose-invert max-w-none">
+      <article className="prose prose-invert prose-lg prose-headings:text-neutral-100 prose-p:text-neutral-200 max-w-none">
         {children}
       </article>
 

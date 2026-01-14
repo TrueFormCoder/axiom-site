@@ -11,17 +11,21 @@ export default function Updates() {
       title="Updates"
       subtitle="A lightweight changelog. Tight edits. No drama."
     >
-      <h2>2026-01-14</h2>
-      <ul>
-        <li>Published Resources hub and core documentation pages</li>
-        <li>Configured Cloudflare Pages static export output</li>
-      </ul>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">2026-01-14</h2>
+        <ul>
+          <li>Published Resources hub and core documentation pages</li>
+          <li>Configured Cloudflare Pages static export output</li>
+        </ul>
+      </section>
 
-      <h2>Next</h2>
-      <ul>
-        <li>Add in-app links to Resources from solve + stats screens</li>
-        <li>Expand FAQ based on real user confusion, not guesses</li>
-      </ul>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">Next</h2>
+        <ul>
+          <li>Add in-app links to Resources from solve + stats screens</li>
+          <li>Expand FAQ based on real user confusion, not guesses</li>
+        </ul>
+      </section>
     </ResourcesLayout>
   );
 }

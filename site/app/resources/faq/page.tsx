@@ -11,38 +11,50 @@ export default function FAQ() {
       title="FAQ"
       subtitle="If you’re confused, you’re not behind — you’re learning the shape of the rules."
     >
-      <h2>Is there only one correct solution?</h2>
-      <p>
-        Yes. The constraints are designed to collapse to a single valid outcome.
-      </p>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">Is there only one correct solution?</h2>
+        <p>
+          Yes. The constraints are designed to collapse to a single valid outcome.
+        </p>
+      </section>
 
-      <h2>Why does guessing fail so often?</h2>
-      <p>
-        Because guessing bypasses the point. Axiom rewards reasoning that survives audit, not luck that lands correctly.
-      </p>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">Why does guessing fail so often?</h2>
+        <p>
+          Because guessing bypasses the point. Axiom rewards reasoning that survives audit, not luck that lands correctly.
+        </p>
+      </section>
 
-      <h2>Does speed matter?</h2>
-      <p>
-        Speed is a metric, not the goal. Build correctness first. Speed appears naturally.
-      </p>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">Does speed matter?</h2>
+        <p>
+          Speed is a metric, not the goal. Build correctness first. Speed appears naturally.
+        </p>
+      </section>
 
-      <h2>Are puzzles reused?</h2>
-      <p>
-        Some structures may recur because the reasoning patterns are the product — but individual puzzles can rotate over time.
-      </p>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">Are puzzles reused?</h2>
+        <p>
+          Some structures may recur because the reasoning patterns are the product — but individual puzzles can rotate over time.
+        </p>
+      </section>
 
-      <h2>Who is Axiom for?</h2>
-      <p>
-        Anyone who wants better thinking under constraints. Students, professionals, and people rebuilding focus.
-        No special background required.
-      </p>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">Who is Axiom for?</h2>
+        <p>
+          Anyone who wants better thinking under constraints. Students, professionals, and people rebuilding focus.
+          No special background required.
+        </p>
+      </section>
 
-      <h2>What should I do when I’m stuck?</h2>
-      <ul>
-        <li>restate each rule as a hard constraint</li>
-        <li>test one assumption and chase implications until it breaks</li>
-        <li>eliminate contradictions instead of debating them</li>
-      </ul>
+      <section className="mt-8 space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-100">What should I do when I’m stuck?</h2>
+        <ul>
+          <li>restate each rule as a hard constraint</li>
+          <li>test one assumption and chase implications until it breaks</li>
+          <li>eliminate contradictions instead of debating them</li>
+        </ul>
+      </section>
     </ResourcesLayout>
   );
 }
