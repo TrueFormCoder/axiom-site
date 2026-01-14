@@ -67,8 +67,9 @@ export default function ResourcesLayout({
 
           prose-a:text-neutral-100 prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-white
 
-          prose-ul:list-disc prose-ul:pl-6 prose-ul:my-5
-          prose-ol:list-decimal prose-ol:pl-6 prose-ol:my-5
+          prose-ul:list-disc prose-ul:list-outside prose-ul:pl-6 prose-ul:my-5
+          prose-ol:list-decimal prose-ol:list-outside prose-ol:pl-6 prose-ol:my-5
+          prose-li:marker:text-neutral-200
           prose-ol:marker:font-semibold prose-ol:marker:text-neutral-100
 
           prose-h2:mt-10 prose-h2:mb-3
