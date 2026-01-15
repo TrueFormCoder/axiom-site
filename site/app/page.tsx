@@ -1,6 +1,34 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
+import { useMemo, useState } from "react";
 
 export default function Home() {
+  const COMICS = useMemo(
+    () => ({
+      living: {
+        src: "/comics/Axiom_Comic_01_SharedLiving_FINAL.png",
+        caption: "Understanding comes before resolution.",
+      },
+      planning: {
+        src: "/comics/Axiom_Comic_01_SharedLiving_FINAL.png",
+        caption: "Nothing needs to be decided yet.",
+      },
+      decisions: {
+        src: "/comics/Axiom_Comic_01_SharedLiving_FINAL.png",
+        caption: "Pressure is information.",
+      },
+      work: {
+        src: "/comics/Axiom_Comic_01_SharedLiving_FINAL.png",
+        caption: "If it feels like a test, pause.",
+      },
+    }),
+    []
+  );
+
+  const [context, setContext] = useState<keyof typeof COMICS>("living");
+
   return (
     <main className="mx-auto w-full max-w-4xl px-8 py-16">
       {/* Hero */}
@@ -51,6 +79,55 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      <section className="mt-10">
+        <div className="mx-auto max-w-xl">
+          <Image
+            src={COMICS[context].src}
+            alt=""
+            width={1080}
+            height={1080}
+            priority
+            className="h-auto w-full rounded-xl"
+          />
+          <p className="mt-4 text-center text-sm text-neutral-400">
+            {COMICS[context].caption}
+          </p>
+
+          <p className="mt-6 text-center text-xs text-neutral-500">
+            Also appears in:{" "}
+            <button
+              type="button"
+              className="hover:text-white underline-offset-4 hover:underline"
+              onMouseEnter={() => setContext("planning")}
+              onFocus={() => setContext("planning")}
+              onClick={() => setContext("planning")}
+            >
+              planning
+            </button>{" "}
+            ·{" "}
+            <button
+              type="button"
+              className="hover:text-white underline-offset-4 hover:underline"
+              onMouseEnter={() => setContext("decisions")}
+              onFocus={() => setContext("decisions")}
+              onClick={() => setContext("decisions")}
+            >
+              decisions
+            </button>{" "}
+            ·{" "}
+            <button
+              type="button"
+              className="hover:text-white underline-offset-4 hover:underline"
+              onMouseEnter={() => setContext("work")}
+              onFocus={() => setContext("work")}
+              onClick={() => setContext("work")}
+            >
+              work
+            </button>
+          </p>
+        </div>
+      </section>
 
       {/* What you get */}
       <section className="mb-10 rounded-2xl border border-neutral-800 bg-neutral-950/40 p-8">
