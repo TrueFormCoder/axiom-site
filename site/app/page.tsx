@@ -81,51 +81,20 @@ export default function Home() {
       </div>
 
       <section className="mt-10">
-        <div className="mx-auto max-w-xl">
+        <div className="mx-auto max-w-xl rounded-2xl bg-white p-6 border-8 border-red-500 shadow-sm opacity-100">
+          <p className="mb-3 text-center text-xs font-semibold text-red-600">
+            DEBUG BUILD MARKER — if you see this, the deploy updated.
+          </p>
+
           <Image
             src={COMICS[context].src}
             alt=""
             width={1080}
             height={1080}
             priority
-            className="h-auto w-full rounded-xl"
+            className="h-auto w-full opacity-100"
+            style={{ filter: "none" }}
           />
-          <p className="mt-4 text-center text-sm text-neutral-400">
-            {COMICS[context].caption}
-          </p>
-
-          <p className="mt-6 text-center text-xs text-neutral-500">
-            Also appears in:{" "}
-            <button
-              type="button"
-              className="hover:text-white underline-offset-4 hover:underline"
-              onMouseEnter={() => setContext("planning")}
-              onFocus={() => setContext("planning")}
-              onClick={() => setContext("planning")}
-            >
-              planning
-            </button>{" "}
-            ·{" "}
-            <button
-              type="button"
-              className="hover:text-white underline-offset-4 hover:underline"
-              onMouseEnter={() => setContext("decisions")}
-              onFocus={() => setContext("decisions")}
-              onClick={() => setContext("decisions")}
-            >
-              decisions
-            </button>{" "}
-            ·{" "}
-            <button
-              type="button"
-              className="hover:text-white underline-offset-4 hover:underline"
-              onMouseEnter={() => setContext("work")}
-              onFocus={() => setContext("work")}
-              onClick={() => setContext("work")}
-            >
-              work
-            </button>
-          </p>
         </div>
       </section>
 
